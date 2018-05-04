@@ -18,6 +18,7 @@
 		71E29A43209968D2008D752A /* WFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A42209968D2008D752A /* WFTableViewController.m */; };
 		71E29A46209968DD008D752A /* WFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A45209968DD008D752A /* WFCollectionViewController.m */; };
 		71E29A4920998A00008D752A /* WFDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A4820998A00008D752A /* WFDataController.m */; };
+		71E29A6020999295008D752A /* WFScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A5F20999295008D752A /* WFScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		71E29A45209968DD008D752A /* WFCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCollectionViewController.m; sourceTree = "<group>"; };
 		71E29A4720998A00008D752A /* WFDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFDataController.h; sourceTree = "<group>"; };
 		71E29A4820998A00008D752A /* WFDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFDataController.m; sourceTree = "<group>"; };
+		71E29A5E20999295008D752A /* WFScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFScrollViewController.h; sourceTree = "<group>"; };
+		71E29A5F20999295008D752A /* WFScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				71E29A45209968DD008D752A /* WFCollectionViewController.m */,
 				71E29A4720998A00008D752A /* WFDataController.h */,
 				71E29A4820998A00008D752A /* WFDataController.m */,
+				71E29A5E20999295008D752A /* WFScrollViewController.h */,
+				71E29A5F20999295008D752A /* WFScrollViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				71E29A4920998A00008D752A /* WFDataController.m in Sources */,
 				71E29A43209968D2008D752A /* WFTableViewController.m in Sources */,
 				71E29A2920996813008D752A /* ViewController.m in Sources */,
+				71E29A6020999295008D752A /* WFScrollViewController.m in Sources */,
 				71E29A3D2099682A008D752A /* WFViewController.m in Sources */,
 				71E29A3420996814008D752A /* main.m in Sources */,
 				71E29A2620996813008D752A /* AppDelegate.m in Sources */,
