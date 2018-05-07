@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FKBaseClasses"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "the base classes for iOS with Objective-C"
 
   # This description is used to generate tags and improve search results.

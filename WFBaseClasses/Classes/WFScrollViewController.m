@@ -59,7 +59,6 @@
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-        _scrollView.contentSize = self.view.bounds.size;
         _scrollView.alwaysBounceVertical = YES;
         _scrollView.delaysContentTouches = NO;
         _scrollView.canCancelContentTouches = NO;
