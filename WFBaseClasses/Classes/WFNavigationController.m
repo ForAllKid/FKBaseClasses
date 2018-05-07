@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self configUISet];
 }
 
 //MARK: Override
@@ -51,6 +51,11 @@
 //MARK: NetworkControl
 
 //MARK: UISet
+
+- (void)configUISet {
+    self.navigationBar.translucent = NO;
+    self.toolbar.translucent = NO;
+}
 
 //MARK: Delegate && DataSource
 
