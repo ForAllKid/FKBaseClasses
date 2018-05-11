@@ -39,6 +39,7 @@
 
 - (void)configUISet{
     self.view.backgroundColor = UIColor.whiteColor;
+    self.navigationItem.titleView = self.titleLabel;
 }
 
 //MARK: Delegate && DataSource
@@ -59,6 +60,14 @@
 
 //MARK: Getter
 
-
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [UILabel new];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:18.f];
+        _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    return _titleLabel;
+}
 
 @end
