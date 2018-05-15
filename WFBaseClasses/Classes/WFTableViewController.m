@@ -91,6 +91,9 @@ NSString *const kTableViewCellId = @"kTableViewCellId";
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:_style];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.separatorInset = UIEdgeInsetsZero;
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 1.f, 0.01f)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 1.f, 0.01f)];
         [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:kTableViewCellId];
     }
     return _tableView;

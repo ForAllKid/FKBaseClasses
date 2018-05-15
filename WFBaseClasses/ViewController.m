@@ -14,16 +14,44 @@
 
 @implementation ViewController
 
+
+//MARK: LifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+//MARK: Override
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+//MARK: VMBind
+
+//MARK: NetworkControl
+
+//MARK: UISet
+
+- (void)configUISet{
+    [super configUISet];
 }
+
+//MARK: Delegate && DataSource
+
+//MARK: Actions
+
+//MARK: Layout
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+}
+
+//MARK: NotificationCenter
+
+//MARK: Observer
+
+//MARK: Setter
+
+//MARK: Getter
+
 
 
 @end
