@@ -46,6 +46,13 @@
     return self.topViewController ? self.topViewController.prefersStatusBarHidden : NO;
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.childViewControllers.count == 1) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
 //MARK: VMBind
 
 //MARK: NetworkControl

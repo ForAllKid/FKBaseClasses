@@ -53,6 +53,14 @@ NSString *const kTableViewCellId = @"kTableViewCellId";
 
 //MARK: Delegate && DataSource
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 0.001f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.001f;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -88,12 +96,15 @@ NSString *const kTableViewCellId = @"kTableViewCellId";
 
 - (UITableView *)tableView {
     if (!_tableView) {
+        CGFloat value = 245.f / 255.f;
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:_style];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorInset = UIEdgeInsetsZero;
-        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 1.f, 0.01f)];
-        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 1.f, 0.01f)];
+        _tableView.separatorInset = UIEdgeInsetsZero;
+        _tableView.separatorColor = [UIColor colorWithRed:value green:value blue:value alpha:1.f];
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.frame.size.width, 0.01f)];
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.frame.size.width, 0.01f)];
         [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:kTableViewCellId];
     }
     return _tableView;

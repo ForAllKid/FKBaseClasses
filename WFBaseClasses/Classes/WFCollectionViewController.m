@@ -79,6 +79,7 @@ NSString *const kCollectionViewCellId = @"kCollectionViewCellId";
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
+    self.collectionView.frame = self.view.bounds;
 }
 
 //MARK: NotificationCenter
@@ -94,6 +95,7 @@ NSString *const kCollectionViewCellId = @"kCollectionViewCellId";
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:_layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
+        _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerClass:UICollectionViewCell.class
             forCellWithReuseIdentifier:kCollectionViewCellId];
     }
