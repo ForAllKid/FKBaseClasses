@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		716F61A320AA879600BE12EC /* WFContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 716F61A220AA879600BE12EC /* WFContentView.m */; };
+		71D7C1C720B3BA04008DC634 /* FKRowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D7C1C620B3BA04008DC634 /* FKRowAction.m */; };
 		71E29A2620996813008D752A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A2520996813008D752A /* AppDelegate.m */; };
 		71E29A2920996813008D752A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E29A2820996813008D752A /* ViewController.m */; };
 		71E29A2C20996813008D752A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E29A2A20996813008D752A /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		716F61A120AA879600BE12EC /* WFContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFContentView.h; sourceTree = "<group>"; };
 		716F61A220AA879600BE12EC /* WFContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFContentView.m; sourceTree = "<group>"; };
+		71D7C1C520B3BA04008DC634 /* FKRowAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKRowAction.h; sourceTree = "<group>"; };
+		71D7C1C620B3BA04008DC634 /* FKRowAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKRowAction.m; sourceTree = "<group>"; };
 		71E29A2120996813008D752A /* WFBaseClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFBaseClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E29A2420996813008D752A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71E29A2520996813008D752A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				716F61A220AA879600BE12EC /* WFContentView.m */,
 				71E29A5E20999295008D752A /* WFScrollViewController.h */,
 				71E29A5F20999295008D752A /* WFScrollViewController.m */,
+				71D7C1C520B3BA04008DC634 /* FKRowAction.h */,
+				71D7C1C620B3BA04008DC634 /* FKRowAction.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			files = (
 				71E29A4920998A00008D752A /* WFDataController.m in Sources */,
 				71E29A43209968D2008D752A /* WFTableViewController.m in Sources */,
+				71D7C1C720B3BA04008DC634 /* FKRowAction.m in Sources */,
 				71E29A2920996813008D752A /* ViewController.m in Sources */,
 				71E29A6020999295008D752A /* WFScrollViewController.m in Sources */,
 				71E29A3D2099682A008D752A /* WFViewController.m in Sources */,
