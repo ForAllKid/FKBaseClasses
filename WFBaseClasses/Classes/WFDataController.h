@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol WFDataControllerInitializer <NSObject>
 
+@optional
+
 - (void)initialCommands;
 
 - (void)initialSignals;

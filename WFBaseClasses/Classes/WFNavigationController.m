@@ -42,6 +42,13 @@
     return self.topViewController ? self.topViewController.preferredStatusBarStyle : UIStatusBarStyleLightContent;
 }
 
+- (CGSize)preferredContentSize {
+    if (self.topViewController) {
+        return self.topViewController.preferredContentSize;
+    }
+    return UIScreen.mainScreen.bounds.size;
+}
+
 - (BOOL)prefersStatusBarHidden {
     return self.topViewController ? self.topViewController.prefersStatusBarHidden : NO;
 }
