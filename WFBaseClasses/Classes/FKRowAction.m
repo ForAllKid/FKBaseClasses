@@ -13,6 +13,7 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
+        _editable = YES;
         _accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return self;
@@ -20,13 +21,13 @@
 
 /// simple copy
 - (id)copyWithZone:(NSZone *)zone {
-    
-    typeof(self) one = [[[self class] allocWithZone:zone] init];
+    typeof(self) one = [[self.class allocWithZone:zone] init];
     one->_title = _title.copy;
     one->_subtitle = _subtitle.copy;
     one->_icon = _icon.copy;
     one->_accessoryType = _accessoryType;
-    
+    one->_placeholder = _placeholder.copy;
+    one->_editable = _editable;
     return one;
 }
 

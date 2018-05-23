@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 ///< default is indicator
 @property (nonatomic) UITableViewCellAccessoryType accessoryType;
 
+///< placeholder
+@property (nullable, nonatomic, copy) NSString *placeholder;
+
+///< editable
+@property (nonatomic, getter=isEditable) BOOL editable;
+
 @end
 
 @class FKRowAction;
