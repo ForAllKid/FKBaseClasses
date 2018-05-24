@@ -30,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///< editable
 @property (nonatomic, getter=isEditable) BOOL editable;
 
+///< parameterKey
+@property (nullable, nonatomic, copy) NSString *parameterKey;
+
 @end
 
 @class FKRowAction;

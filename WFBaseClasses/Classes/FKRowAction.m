@@ -28,6 +28,7 @@
     one->_accessoryType = _accessoryType;
     one->_placeholder = _placeholder.copy;
     one->_editable = _editable;
+    one->_parameterKey = _parameterKey.copy;
     return one;
 }
 
