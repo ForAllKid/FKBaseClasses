@@ -50,6 +50,7 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
+    [self.titleLabel sizeToFit];
 }
 
 //MARK: NotificationCenter

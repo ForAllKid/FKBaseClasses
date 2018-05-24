@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)controllerDidLoad NS_REQUIRES_SUPER;
 
-- (void)didReceiveMemoryWarning NS_REQUIRES_SUPER;
+- (void)didReceiveMemoryWarning NS_REQUIRES_SUPER  NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, "弃用，因为在重写init的情况下会造成方法调用顺序的问题i");
 
 @end
 
