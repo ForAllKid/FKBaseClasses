@@ -14,9 +14,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WFDataController : NSObject
 
-- (void)controllerDidLoad NS_REQUIRES_SUPER;
+/**
+ 控制器加载完成
+ NOTE:该方法已弃用
+ */
+- (void)controllerDidLoad NS_REQUIRES_SUPER NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, "弃用，因为在重写init的情况下会造成方法调用顺序的问题，尽量将API迁移到init方法");
 
-- (void)didReceiveMemoryWarning NS_REQUIRES_SUPER  NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, "弃用，因为在重写init的情况下会造成方法调用顺序的问题i");
+
+/**
+ 收到内存警告会触发该方法，该方法会在类初始化的时候注册一个内存警告通知
+ */
+- (void)didReceiveMemoryWarning NS_REQUIRES_SUPER;
 
 @end
 
@@ -26,9 +34,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+/**
+ 初始化RACCommand
+ */
 - (void)initialCommands;
 
+/**
+ 初始化RACSignal
+ */
 - (void)initialSignals;
+
+/**
+ 取消所有的请求
+ */
+- (void)cancelAllRequest;
+
+/**
+ 销毁所有的timer
+ */
+- (void)distoryTimers;
 
 @end
 
