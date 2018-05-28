@@ -29,6 +29,7 @@
     one->_placeholder = _placeholder.copy;
     one->_editable = _editable;
     one->_parameterKey = _parameterKey.copy;
+    one->_keyboardType = _keyboardType;
     return one;
 }
 

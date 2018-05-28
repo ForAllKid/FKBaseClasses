@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///< parameterKey
 @property (nullable, nonatomic, copy) NSString *parameterKey;
 
+///< the key board type
+@property (nonatomic) UIKeyboardType keyboardType;
+
 @end
 
 @class FKRowAction;
