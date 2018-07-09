@@ -50,6 +50,7 @@
 		71E29A4820998A00008D752A /* WFDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFDataController.m; sourceTree = "<group>"; };
 		71E29A5E20999295008D752A /* WFScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFScrollViewController.h; sourceTree = "<group>"; };
 		71E29A5F20999295008D752A /* WFScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFScrollViewController.m; sourceTree = "<group>"; };
+		71EAF63B20F2E6BB00823757 /* WFBaseClassesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFBaseClassesHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		71E29A3A2099681A008D752A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				71EAF63B20F2E6BB00823757 /* WFBaseClassesHeader.h */,
 				71E29A3B2099682A008D752A /* WFViewController.h */,
 				71E29A3C2099682A008D752A /* WFViewController.m */,
 				71E29A3E2099683B008D752A /* WFNavigationController.h */,

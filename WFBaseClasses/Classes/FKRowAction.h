@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FKRowActionConfig : NSObject<NSCopying>
+@interface WFRowActionConfig : NSObject<NSCopying>
 
 ///< title
 @property (nullable, nonatomic, copy) NSString *title;
@@ -44,11 +44,11 @@ typedef void(^FKRowActionHandler)(FKRowAction *action);
 
 @interface FKRowAction : NSObject <NSCopying>
 
-@property (nullable, nonatomic, copy, readonly) FKRowActionConfig *config;
+@property (nullable, nonatomic, copy, readonly) WFRowActionConfig *config;
 
 @property (nullable, nonatomic, copy, readonly) FKRowActionHandler handler;
 
-+ (FKRowAction *)actionWithConfig:(nullable FKRowActionConfig *)config
++ (FKRowAction *)actionWithConfig:(nullable WFRowActionConfig *)config
                           handler:(nullable FKRowActionHandler)handler;
 
 

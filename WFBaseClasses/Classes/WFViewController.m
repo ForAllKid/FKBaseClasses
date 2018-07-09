@@ -40,6 +40,11 @@
 - (void)configUISet{
     self.view.backgroundColor = UIColor.whiteColor;
     self.navigationItem.titleView = self.titleLabel;
+    
+    float currentVersion = UIDevice.currentDevice.systemVersion.floatValue;
+    if (currentVersion > 8.f && currentVersion < 11.f) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 //MARK: Delegate && DataSource

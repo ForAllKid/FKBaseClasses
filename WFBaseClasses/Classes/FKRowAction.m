@@ -8,7 +8,7 @@
 
 #import "FKRowAction.h"
 
-@implementation FKRowActionConfig
+@implementation WFRowActionConfig
 
 - (instancetype)init{
     self = [super init];
@@ -37,7 +37,7 @@
 
 @implementation FKRowAction
 
-+ (FKRowAction *)actionWithConfig:(FKRowActionConfig *)config
++ (FKRowAction *)actionWithConfig:(WFRowActionConfig *)config
                           handler:(FKRowActionHandler)handler {
     
     FKRowAction *one = [[FKRowAction alloc] init];

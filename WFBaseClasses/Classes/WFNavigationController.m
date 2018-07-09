@@ -60,6 +60,14 @@
     [super pushViewController:viewController animated:animated];
 }
 
+- (UIViewController *)childViewControllerForHomeIndicatorAutoHidden {
+    return self.topViewController;
+}
+
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return self.topViewController.prefersHomeIndicatorAutoHidden;
+}
+
 //MARK: VMBind
 
 //MARK: NetworkControl
