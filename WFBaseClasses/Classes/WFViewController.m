@@ -38,13 +38,9 @@
 //MARK: UISet
 
 - (void)configUISet{
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = UIColor.whiteColor;
     self.navigationItem.titleView = self.titleLabel;
-    
-    float currentVersion = UIDevice.currentDevice.systemVersion.floatValue;
-    if (currentVersion > 8.f && currentVersion < 11.f) {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
 }
 
 //MARK: Delegate && DataSource
@@ -55,7 +51,6 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    [self.titleLabel sizeToFit];
 }
 
 //MARK: NotificationCenter
@@ -68,7 +63,7 @@
 
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
-        _titleLabel = [UILabel new];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 44.f)];
         _titleLabel.font = [UIFont boldSystemFontOfSize:18.f];
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;

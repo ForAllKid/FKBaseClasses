@@ -58,7 +58,7 @@ typedef void(^FKRowActionHandler)(FKRowAction *action);
 
 @interface FKGroupedRowAction : NSObject <NSCopying>
 
-@property (nullable, nonatomic, strong, readonly) NSArray <FKRowAction *> *actions;
+@property (nullable, nonatomic, copy) NSArray <FKRowAction *> *actions;
 
 @property (nullable, nonatomic, copy) NSString *headerTitle;
 @property (nullable, nonatomic, copy) NSString *footerTitle;
