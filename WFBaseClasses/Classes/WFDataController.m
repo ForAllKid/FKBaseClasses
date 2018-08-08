@@ -17,22 +17,14 @@
 
 //MARK: LifeCycle
 
-+ (void)initialize {
-    [super initialize];
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(didReceiveMemoryWarning) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
-}
-
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [self controllerDidLoad];
+
     }
     return self;
 }
 
-- (void)controllerDidLoad {
-    
-}
 
 - (void)dealloc {
     NSLog(@"the %@ data controller deallocted", NSStringFromClass(self.class));
@@ -48,9 +40,6 @@
 
 //MARK: Actions
 
-- (void)didReceiveMemoryWarning {
-    
-}
 
 //MARK: NotificationCenter
 
